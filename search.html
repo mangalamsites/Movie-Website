@@ -225,24 +225,40 @@
       </div>
     </div>
     <script>
+      const noResultsMessage = "No movies found.";
+      let currentPage = 1;
+      const postsPerPage = 20;
+      const adUrls = ["https://example-ad1.com", "https://example-ad2.com"];
+      const maxAdClicks = adUrls.length;
+      let postTitles = [];
+      let postCategory = [];
+      let postImages = [];
       document.addEventListener("DOMContentLoaded", function () {
-        const adUrls = ["https://example-ad1.com", "https://example-ad2.com"]; // Add your advertisement URLs
-        const maxAdClicks = adUrls.length;
-
+        fetch("movies.json")
+        .then((response) => response.json())
+        .then((data) => {
+            data.forEach((cat) => {
+              cat.movies.forEach((movie) => {
+                postTitles.push(movie.title);
+                postCategory.push(cat.category);
+                postImages.push(movie.imageUrl);
+              });
+            });
+          loadPosts(currentPage);
+        });
         function loadPosts(page, filteredTitles = postTitles) {
           const postContainer = document.querySelector(".movies");
           postContainer.innerHTML = "";
 
-          if (filteredTitles.length === 0) {
+          const startIndex = (page - 1) * postsPerPage;
+          const endIndex = startIndex + postsPerPage;
+          const postsToShow = filteredTitles.slice(startIndex, endIndex);
+          if (postsToShow.length === 0) {
             postContainer.innerHTML = `<p>${noResultsMessage}</p>`;
             document.getElementById("prevButton").disabled = true;
             document.getElementById("nextButton").disabled = true;
             return;
           }
-
-          const startIndex = (page - 1) * postsPerPage;
-          const endIndex = startIndex + postsPerPage;
-          const postsToShow = filteredTitles.slice(startIndex, endIndex);
 
           postsToShow.forEach((title) => {
             const postElement = document.createElement("div");
@@ -311,28 +327,9 @@
           // )}`;
         }
         loadMenuButtons();
-        loadPosts(currentPage);
       });
     </script>
     <script>
-      const noResultsMessage = "No movies found.";
-      let currentPage = 1;
-      const postsPerPage = 20;
-      const adUrls = ["https://example-ad1.com", "https://example-ad2.com"];
-      const maxAdClicks = adUrls.length;
-
-      const postTitles = [
-        "Love Again Movie Download",
-        "VEDDA FULL MOVIE DOWNLOAD",
-        "POPEYE FULL MOVIE DOWNLOAD",
-        "BLOODY DADDY FULL MOVIE",
-        "KAJASAAR FULL MOVIE",
-        "VISFOT FULL MOVIE DOWNLOAD",
-        "AVENGERS MOVIE DOWNLOAD",
-        "GRAND RELEASE TODAY",
-        "KALKI MOVIE",
-      ];
-
       document.addEventListener("DOMContentLoaded", function () {
         const searchInput = document.getElementById("searchInput");
 
@@ -393,12 +390,12 @@
         const endIndex = startIndex + postsPerPage;
         const postsToShow = filteredTitles.slice(startIndex, endIndex);
 
-        postsToShow.forEach((title) => {
+        postsToShow.forEach((title,index) => {
           const postElement = document.createElement("div");
           postElement.classList.add("movie-card");
 
           const imgElement = document.createElement("img");
-          imgElement.src = "https://via.placeholder.com/150";
+          imgElement.src = postImages[index];
 
           const titleElement = document.createElement("p");
           titleElement.innerText = title;
@@ -407,7 +404,7 @@
           postElement.appendChild(titleElement);
           postContainer.appendChild(postElement);
 
-          postElement.addEventListener("click", () => handleAdClick(title));
+          postElement.addEventListener("click", () => handleAdClick(title,postCategory[index]));
         });
 
         document.getElementById("prevButton").disabled = page === 1;
@@ -429,16 +426,15 @@
         applySearch(query);
       }
 
-      function handleAdClick(title) {
+      function handleAdClick(title,category) {
         let clickCount = parseInt(localStorage.getItem(title)) || 0;
+        const finalUrl = `movie-details.html?movie=${encodeURIComponent(title)}&category=${encodeURIComponent(category)}`;
 
         if (clickCount < maxAdClicks) {
           window.location.href = adUrls[clickCount];
           localStorage.setItem(title, clickCount + 1);
         } else {
-          window.location.href = `movie-details.html?movie=${encodeURIComponent(
-            title
-          )}`;
+          window.location.href = finalUrl;
           localStorage.setItem(title, 0); // Reset click count after redirecting to the movie details
         }
       }
