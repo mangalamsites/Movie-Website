@@ -165,7 +165,58 @@
         }
       }
     ],
-      
+     {
+        "id": "s7",
+        "title": "VETTAIYAN MOVIES  ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEjs3FX5RMEQC92na1SHc3-6fPH2h0k_e67VlNk4GdQZV4IGI17kuC_7u7XLs7CoWX6ILPMNX-7iqWbbvm75iik3HX8CrrkaLELLuyIFPfzuawZ89ej4g2jGXuU8jThDx8Luq4bZfc_i6eKIS1V0Iyf10V4a03tOCZVxInZ_nAgs0bj-IFArp-x-PA5Trqon ",
+        "description": "A South Indian film that leaves a lasting impression.",
+        "link": {
+          "360": "https://1024terabox.com/s/1zIP96MXlfe3eKm2EALCg5w",
+          "480": "https://1024terabox.com/s/1zIP96MXlfe3eKm2EALCg5w",
+          "720": "https://1024terabox.com/s/1zIP96MXlfe3eKm2EALCg5w",
+          "1080": "https://1024terabox.com/s/1zIP96MXlfe3eKm2EALCg5w"
+        }
+      }
+    ],
+      {
+        "id": "s8",
+        "title": " MARTIN MOVIE ",
+        "imageUrl": " https://blogger.googleusercontent.com/img/a/AVvXsEhav2ZdpZHAVUiSMzEuYqsjeiuMeC544jZBGu5nzh5gL0lPEKpjM2jiJgPtdreZGrPl5ib1uQnA_VnzeebT4ZELdxT4y9J9v_kdzOYemyzlOgOo4Prt28ntZeu5cvQ9yQnXGHOLhz3Z_yLf2R5wzmh5GHQgr7kL5zbtd3PeGMuxg7qgiAW2_JHiApysf6Un  ",
+        "description": "A South Indian film that leaves a lasting impression.",
+        "link": {
+          "360": "https://1024terabox.com/s/17G4dtCytjJKpL9IL8sklXw",
+          "480": "https://1024terabox.com/s/17G4dtCytjJKpL9IL8sklXw",
+          "720": "https://1024terabox.com/s/17G4dtCytjJKpL9IL8sklXw",
+          "1080": "https://1024terabox.com/s/17G4dtCytjJKpL9IL8sklXw"
+        }
+      }
+    ], 
+    {
+        "id": "s9",
+        "title": " KALINGA MOVIE ",
+        "imageUrl": " https://blogger.googleusercontent.com/img/a/AVvXsEgYRzoxgf-M0ka5UXidpt-cWsiAyyUsdGmmWgzczAlqN06RbaESIMB1C0Ney8DbDU3CyNwk5g33kfkSMWBW6tNax5krMh69FGK10MolKRaClJ2MDYjv86W9kem0sajcDuyEflW-gctC25FyJL3BqPbNq2YNOMSZIIIow3PQ6IErnYvPzqx1NWOTVTkJjKJp ",
+        "description": "A South Indian film that leaves a lasting impression.",
+        "link": {
+          "360": "https://1024terabox.com/s/1Zi55SXWeTg0TtLZ49VJNnQ",
+          "480": "https://1024terabox.com/s/1Zi55SXWeTg0TtLZ49VJNnQ",
+          "720": "https://1024terabox.com/s/1Zi55SXWeTg0TtLZ49VJNnQ",
+          "1080": "https://1024terabox.com/s/1Zi55SXWeTg0TtLZ49VJNnQ"
+        }
+      }
+    ], 
+     {
+        "id": "s10",
+        "title": "SAHADEV MOVIE  ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEhquwlt36wZhWgt1s7SGcqHxML00QhZnIoxVzzIYh-gNm-suFG0PxoCFyxdkOJHCH66nolzGIUzfob2OGzru9ikzyfkdnaEpN_MjUgFSyXq3ORLxFGGiVwwJN08pPREg-02z3YTxKgVvo1Ju5aUm7r5Jwvuf2ACG1hQCtS2REjnWIuuAH3Ijv66q-MXepAC",
+        "description": "A South Indian film that leaves a lasting impression.",
+        "link": {
+          "360": " https://1024terabox.com/s/16rcXTgvX6NFUEUoqu5e3PQ",
+          "480": " https://1024terabox.com/s/16rcXTgvX6NFUEUoqu5e3PQ",
+          "720": " https://1024terabox.com/s/16rcXTgvX6NFUEUoqu5e3PQ",
+          "1080": " https://1024terabox.com/s/16rcXTgvX6NFUEUoqu5e3PQ"
+        }
+      }
+    ],
     "moreLink": "hollywood.html"
   },
   {
