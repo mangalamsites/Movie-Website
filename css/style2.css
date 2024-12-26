@@ -149,19 +149,17 @@ textarea {
     margin-bottom: 4px;
     padding: 4px;
     border-bottom: 4px dashed #413e3e;
-    /* height: 10%; */
 }
 
 .image-slide {
     display: flex;
-    width: 20%;
-    animation: scroll 4s linear infinite;
-    will-change: 'transform';
+    width: max-content;
+    animation: scroll 10s linear infinite;
 }
 
 .image-slide img {
-    width: 100%;
-    /* Adjust based on actual image count */
+    width: 100px;
+    /* Adjust as needed */
     margin: 3px;
     border-radius: 10px;
     flex-shrink: 0;
@@ -173,8 +171,9 @@ textarea {
 }
 
 @media screen and (max-width: 600px) {
-    .image-slide {
-        width: 50%;
+    .image-slide img {
+        width: 10%;
+        /* Adjust size for mobile */
     }
 }
 
@@ -184,9 +183,10 @@ textarea {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
+
 
 .menu {
     background-color: var(--secondary-color);
@@ -261,7 +261,7 @@ textarea {
     font-family: monospace;
 }
 
-.box .head a:hover{
+.box .head a:hover {
     text-decoration: underline;
 }
 
@@ -287,11 +287,11 @@ textarea {
     transition: transform 0.3s ease;
 }
 
-.movie-card img{
+.movie-card img {
     width: 100%;
 }
 
-.movie-card p{
+.movie-card p {
     margin: 10px;
     font-size: 14px;
     font-size: x-large;
@@ -302,7 +302,7 @@ textarea {
     transform: scale(1.05);
 }
 
-.movies{
+.movies {
     overflow-y: auto;
     height: 211px;
 }
