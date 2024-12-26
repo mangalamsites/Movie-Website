@@ -170,7 +170,7 @@ textarea {
     animation-play-state: paused;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .image-slide img {
         width: 10%;
         /* Adjust size for mobile */
