@@ -21,7 +21,9 @@
         </div>
         <div id="sub-navigation">
           <button onclick="window.location.href='category.html'">Movies</button>
-          <button onclick="window.location.href=`category.html?category=${encodeURIComponent('web Series')}`">
+          <button
+            onclick="window.location.href=`category.html?category=${encodeURIComponent('web Series')}`"
+          >
             Webseries
           </button>
         </div>
@@ -188,9 +190,12 @@
         .catch((error) => {
           console.error("Error fetching JSON:", error);
         });
+
       function loadImages() {
         const imageSlide = document.getElementById("image-slide");
-        imageSlide.innerHTML = "";
+        imageSlide.innerHTML = ""; // Clear previous images if any
+
+        // Append original images
         images.forEach((img, index) => {
           const image = document.createElement("img");
           image.src = img.src;
@@ -202,7 +207,21 @@
           );
           imageSlide.appendChild(image);
         });
+
+        // Duplicate images for seamless looping
+        images.forEach((img, index) => {
+          const duplicateImage = document.createElement("img");
+          duplicateImage.src = img.src;
+          duplicateImage.alt = `Image of ${img.title}`;
+          duplicateImage.title = img.title;
+          duplicateImage.classList.add("slider-image");
+          duplicateImage.addEventListener("click", () =>
+            handleAdRedirect(index, img.category)
+          );
+          imageSlide.appendChild(duplicateImage);
+        });
       }
+
       // loadImages();
 
       const categories = [
