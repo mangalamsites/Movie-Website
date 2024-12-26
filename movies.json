@@ -742,75 +742,123 @@
     "movies": [
      
     {
-        "id": "movieholly1",
-        "title": "X-Man",
-        "imageUrl": "https://via.placeholder.com/150",
+        "id": "h1",
+        "title": "REBEL MOON PART-2 ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEgo0ICm5Yvlyfmsq7U8osyuCIuPmIosBln4UMabnC9fGUjNgkEdduW8V1Yzt7xmUMLdnKOoOXOz84MHCo2HVFEUeTMch7qLkFiWzYyZS5tCXr2Jxw7rvRqfslIxWgRye82Motdmh-eT9OEeHW7wBaRoLIAWaqhRyTM4Nuh95yRU4U_uW3-GSXZS_yalF86a",
         "description": "A Hollywood superhero movie with incredible action scenes.",
         "link": {
-          "360": "https://example.com/movie360.mp4",
-          "480": "https://example.com/movie480.mp4",
-          "720": "https://example.com/movie720.mp4",
-          "1080": "https://example.com/movie1080.mp4"
+          "360": "https://1024terabox.com/s/1dqCzfHnBzy55bYTvJkFbXQ",
+          "480": "https://1024terabox.com/s/1dqCzfHnBzy55bYTvJkFbXQ",
+          "720": "https://1024terabox.com/s/1dqCzfHnBzy55bYTvJkFbXQ",
+          "1080": "https://1024terabox.com/s/1dqCzfHnBzy55bYTvJkFbXQ"
         }
       },
       {
-        "id": "movieholly2",
-        "title": "X-Man",
-        "imageUrl": "https://via.placeholder.com/150",
+        "id": "h2",
+        "title": "UNDER PARIS ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEiKqHZG0_7y8u0b9pWcqjXWLtrhTgBdLPjig3XpCpbvcLAKvtGiFWfiKNaFyBdKZv4cFqU1Le-jmRBo_HPtTWRtPWIWxY_Y27djyaoxJse62WqjdFd4KhrSUogu1m-zKUmVze-JIWxLX-eOVQOizztEI2aPigxZGpMGkljBGffgjHAlvGCbD59i_zLOZR4x",
         "description": "An epic Hollywood film featuring iconic heroes.",
         "link": {
-          "360": "https://example.com/movie360.mp4",
-          "480": "https://example.com/movie480.mp4",
-          "720": "https://example.com/movie720.mp4",
-          "1080": "https://example.com/movie1080.mp4"
+          "360": "https://1024terabox.com/s/1WrtZf2XwT17lPtnFWn3OKA",
+          "480": "https://1024terabox.com/s/1WrtZf2XwT17lPtnFWn3OKA",
+          "720": "https://1024terabox.com/s/1WrtZf2XwT17lPtnFWn3OKA",
+          "1080": "https://1024terabox.com/s/1WrtZf2XwT17lPtnFWn3OKA"
         }
       },
       {
-        "id": "movieholly3",
-        "title": "X-Man",
-        "imageUrl": "https://via.placeholder.com/150",
+        "id": "h3",
+        "title": "ROAD HOUSE ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEhQzM5I_LEMlmARufvU_fYXtht_9JQb5MUAsoS84fsfQN8iC5YmQ7haZomB1G_QEcy64nC38HV-rPIYOn43EurqivKuXb-doDghCv3CcBfULsZsQuKJAyN4z8A89C_MYURfGv1-WE_RBekNija2D2eCuUW7jGIT-7Xpr7QO-t1Z4RdGWqT5rgv76hvT_3ev",
         "description": "A thrilling Hollywood movie with a strong storyline.",
         "link": {
-          "360": "https://example.com/movie360.mp4",
-          "480": "https://example.com/movie480.mp4",
-          "720": "https://example.com/movie720.mp4",
-          "1080": "https://example.com/movie1080.mp4"
+          "360": "https://1024terabox.com/s/1B-qKDMOEgVRrIgXtADDeZQ",
+          "480": "https://1024terabox.com/s/1B-qKDMOEgVRrIgXtADDeZQ",
+          "720": "https://1024terabox.com/s/1B-qKDMOEgVRrIgXtADDeZQ",
+          "1080": "https://1024terabox.com/s/1B-qKDMOEgVRrIgXtADDeZQ"
         }
       },
       {
-        "id": "movieholly4",
-        "title": "X-Man",
-        "imageUrl": "https://via.placeholder.com/150",
+        "id": "h4",
+        "title": "THE FALL GUY ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEjvx01ppswDuHyILKQKT7Uope7SnzRaU43tbbh9DN8uToJV6TJv-ViK3erQCE-Pt5nKQazoFXejR27MIvcgp97YjKRLWpw384w0Lz7HKjVspdujgoseFQr9nTpRPfU3KuJX8BFyU5Ap9yWDZRasnslEsX5YDJ7EgXDVTchnRVxLbVJUouxL9VkJXt466DMM",
         "description": "A visually stunning Hollywood superhero film.",
         "link": {
-          "360": "https://example.com/movie360.mp4",
-          "480": "https://example.com/movie480.mp4",
-          "720": "https://example.com/movie720.mp4",
-          "1080": "https://example.com/movie1080.mp4"
+          "360": "https://1024terabox.com/s/1ZFArAiOyoSDZg2bcQZD5XA",
+          "480": "https://1024terabox.com/s/1ZFArAiOyoSDZg2bcQZD5XA",
+          "720": "https://1024terabox.com/s/1ZFArAiOyoSDZg2bcQZD5XA",
+          "1080": "https://1024terabox.com/s/1ZFArAiOyoSDZg2bcQZD5XA"
         }
       },
       {
-        "id": "movieholly5",
-        "title": "X-Man",
-        "imageUrl": "https://via.placeholder.com/150",
+        "id": "h5",
+        "title": "ATLAS MOVIE ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEiToJlIWamTZddkPIn2xOBpZ8kbQNNPprgQRM06p34x2qejZ0-uZ24FvcHX6NC54oAD4fBPZooq1zNEOTXItEfHuPNcwmp2nnNC8uVlIKXRKhPvQVfRj8WKOr1Bk9fzdVYuli_m2biW3Gd57AJAo5d2XS5Ikd-I-TH1F6qp4rFnHZ4aKxN-z9uVUHysdpBa",
         "description": "An adventurous Hollywood movie with memorable characters.",
         "link": {
-          "360": "https://example.com/movie360.mp4",
-          "480": "https://example.com/movie480.mp4",
-          "720": "https://example.com/movie720.mp4",
-          "1080": "https://example.com/movie1080.mp4"
+          "360": "https://1024terabox.com/s/1Za4gmTK8po_cICdbk8rEIA",
+          "480": "https://1024terabox.com/s/1Za4gmTK8po_cICdbk8rEIA",
+          "720": "https://1024terabox.com/s/1Za4gmTK8po_cICdbk8rEIA",
+          "1080": "https://1024terabox.com/s/1Za4gmTK8po_cICdbk8rEIA"
         }
       },
       {
-        "id": "movieholly6",
-        "title": "X-Man",
-        "imageUrl": "https://via.placeholder.com/150",
+        "id": "h6",
+        "title": "NIGHT SWIM ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEhD_R3NAB7-YY-pHK_K3QYiq1neP_l9S3piJyuG3xDwlhAJKMyxTPZMCrxEx1NvniGogoFgtFHLb-_nY6vcGY7GzoaLiWN4qz_zl6zRBGEYOW5H37mGkeWoMs0k1f_-pse69u59ej3EU0HmpaFcsvCGWjs3qxgwWD2h3Rl6ROKq15NBzTfoK--SUvHFA_Qs",
         "description": "A Hollywood classic loved by audiences worldwide.",
         "link": {
-          "360": "https://example.com/movie360.mp4",
-          "480": "https://example.com/movie480.mp4",
-          "720": "https://example.com/movie720.mp4",
-          "1080": "https://example.com/movie1080.mp4"
+          "360": "https://1024terabox.com/s/1qOR_QIEWZZK7VYZRiLJX7Q",
+          "480": "https://1024terabox.com/s/1qOR_QIEWZZK7VYZRiLJX7Q",
+          "720": "https://1024terabox.com/s/1qOR_QIEWZZK7VYZRiLJX7Q",
+          "1080": "https://1024terabox.com/s/1qOR_QIEWZZK7VYZRiLJX7Q"
+        }
+      },
+      {
+        "id": "h7",
+        "title": "VENOM THE LAST DANCE  ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEiLfNkI7qdHYBce34pLBhVzcbs0mJ61gumkmjj9d1V4aQdj19p7rQcvpUEo47EQj69zNJgWMST6PHJGJXy9MQwoJb_TNvb5WZ3Oxa2JkYeugVGL1B7nBCc_OwPgCMD98Zz5DXzFytJm2OWIV8VrZyZQmJcORqjjaGhZKCrMwBi8PSSzmVPiFkmWmqp4OKYl",
+        "description": "A Hollywood classic loved by audiences worldwide.",
+        "link": {
+          "360": "https://1024terabox.com/s/10tKZacIKMfb2Zt-dX8kE5Q",
+          "480": "https://1024terabox.com/s/10tKZacIKMfb2Zt-dX8kE5Q",
+          "720": "https://1024terabox.com/s/10tKZacIKMfb2Zt-dX8kE5Q",
+          "1080": "https://1024terabox.com/s/10tKZacIKMfb2Zt-dX8kE5Q"
+        }
+      },
+      {
+        "id": "h8",
+        "title": "KILLER HEAT   ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEhEeQZEfAhTtQyGOtKOJ6FNyDADAocjqxx7T1RkHY-AsYsjvnwAuIGpUvqskKj8u-A4zOOVVUhww-MxJidP6PuJDq8uJ2eKq_So1QGvD6cuU3s0PmyIauIg5bMrdRV7iqZpUeEO15wqYuDjuTXGa3uzeVsEdnUo7FmQksBO9-WRJGLtUYiflz-9T2I9S5Mj",
+        "description": "A Hollywood classic loved by audiences worldwide.",
+        "link": {
+          "360": "https://1024terabox.com/s/1jBJGrp0fmIcRylDN1XYkRA",
+          "480": "https://1024terabox.com/s/1jBJGrp0fmIcRylDN1XYkRA",
+          "720": "https://1024terabox.com/s/1jBJGrp0fmIcRylDN1XYkRA",
+          "1080": "https://1024terabox.com/s/1jBJGrp0fmIcRylDN1XYkRA"
+        }
+      },
+       {
+        "id": "h9",
+        "title": "THE IDEA OF YOU    ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEgcEw1LY3Xk_Y2oGuN4LN7F-ouX1Gn2hMs-DZFGbnJcJvD20tsMZM_PITHLmDSs5_GDSjhxvyt-p0CHeFpD302xnX4Uf89zXLFxogq3TPgxltSRrYCAgX0PWAGzVFJUpBGy2XVEIrQ7DcO3toVi62WfPA2EPb1ZVuvKYbzCLEFIX3yoL9uLbtoG1WREL_bG",
+        "description": "A Hollywood classic loved by audiences worldwide.",
+        "link": {
+          "360": "https://1024terabox.com/s/1Ku4G5snsvSpfqk4tO7Eyjg",
+          "480": "https://1024terabox.com/s/1Ku4G5snsvSpfqk4tO7Eyjg",
+          "720": "https://1024terabox.com/s/1Ku4G5snsvSpfqk4tO7Eyjg",
+          "1080": "https://1024terabox.com/s/1Ku4G5snsvSpfqk4tO7Eyjg"
+        }
+      },
+      {
+        "id": "h10",
+        "title": "ALIEN ROMULUS  ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEg6FkUw5JjA64Bs5JlZNZGj_4_V2AiMMix1do7jVHFzu0d_0-TwoDRqVxODncANPE15IcdKdUUU0J9jSjbnDNiDu48J5-VkXOv0Z32EFD720lYZYBJnAbC-akymfSCXvms_7LWowwrTVStuAi7UZv2RhTZJpd0cCLhJixux8izUTYTh90b9qvG8Vkvk6cMf",
+        "description": "A Hollywood classic loved by audiences worldwide.",
+        "link": {
+          "360": "https://1024terabox.com/s/1YimFfCWFmtxcUdtjXeBAEg",
+          "480": "https://1024terabox.com/s/1YimFfCWFmtxcUdtjXeBAEg",
+          "720": "https://1024terabox.com/s/1YimFfCWFmtxcUdtjXeBAEg",
+          "1080": "https://1024terabox.com/s/1YimFfCWFmtxcUdtjXeBAEg"
         }
       }
     ],
