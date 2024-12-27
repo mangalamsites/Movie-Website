@@ -3,185 +3,240 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Details</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        background: url("./css/images/body-bg.gif");
-        margin: 0;
-        padding: 20px;
-        color: white;
-      }
-
-      .movie-details-container {
-        background: black;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        max-width: 800px;
-        margin: 20px auto;
-      }
-
-      .movie-meta {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 20px;
-      }
-
-      .movie-meta img {
-        width: 100%;
-        max-width: 450px;
-        border-radius: 8px;
-        margin-right: 20px;
-      }
-
-      .movie-meta p {
-        flex-grow: 1;
-        margin-top: 10px;
-      }
-
-      .download-options h3 {
-        margin-top: 20px;
-      }
-
-      .download-options button {
-        background-color: #4caf50; /* Green background */
-        background-image: linear-gradient(
-          to right,
-          #1dd11d,
-          #10af10,
-          #1cc71c,
-          #4d4ddb,
-          #2323af
-        );
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        margin: 8px 0;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s;
-      }
-
-      .download-options button:hover {
-        background-color: #45a049; /* Darker green background on hover */
-      }
-
-      @media (max-width: 768px) {
-        .movie-details-container {
-          padding: 10px;
-          margin: 10px;
-        }
-
-        .movie-meta {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .movie-meta img {
-          margin-right: 0;
-          margin-bottom: 10px;
-        }
-
-        .menu-buttons button,
-        .download-options button {
-          padding: 8px 10px;
-          font-size: 14px;
-        }
-      }
-    </style>
+    <title>Manglam Movies</title>
+    <link rel="stylesheet" href="./css/style2.css" />
   </head>
   <body>
-    <div class="movie-details-container">
-      <!-- <i class="fa-regular fa-house"></i> -->
-      <h1 id="movie-title">Movie Title</h1>
-      <div class="movie-meta">
-        <img
-          id="movie-image"
-          src="https://via.placeholder.com/450x300"
-          alt="Movie Image"
-        />
-        <p id="movie-description">Movie Desc.</p>
+    <div id="shell">
+      <div id="header">
+        <div class="headerM">
+          <div id="logo">
+            <p>Manglam Movies</p>
+          </div>
+          <div class="icon">
+            <div onclick="window.location.href='search.html'">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <div id="sub-navigation">
+          <button onclick="window.location.href='category.html'">Movies</button>
+          <button onclick="window.location.href=`category.html?category=${encodeURIComponent('web Series')}`">
+            Webseries
+          </button>
+        </div>
       </div>
-      <div class="download-options">
-        <h3>Download Options:</h3>
-        <button onclick="handleDownload('360')">WATCH(वीडियो देखें)</button>
-        <button onclick="handleDownload('480')">WATCH(वीडियो देखें)</button>
-        <button onclick="handleDownload('720')">Download [600 MB]</button>
-        <button onclick="handleDownload('1080')">Download [2.1GB]</button>
+      <div class="image-slider">
+        <div class="image-slide" id="image-slide"></div>
       </div>
+      <div id="content"></div>
+      <div class="menu">
+        <div class="menu-buttons" id="menu-buttons"></div>
+      </div>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <h3>About Us</h3>
+          <p>
+            We offer the latest movie reviews, trailers, and session times at a
+            glance.
+          </p>
+        </div>
+        <div class="footer-content">
+          <h3>Contact Info</h3>
+          <p>Email: info@yourwebsite.com</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fa fa-youtube"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script>
-      function getDesc(jsonData, categoryName, movieTitle) {
-        const category = jsonData.find(
-          (cat) => cat.category.toLowerCase() === categoryName.toLowerCase()
-        );
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("movies.json")
+        .then((response) => response.json())
+        .then((data) => {
+          populateMovies(data);
+          attachClickListeners();
+        })
+        .catch((error) => console.error("Error loading movies:", error));
+      function populateMovies(data) {
+        const content = document.getElementById("content");
+        data.forEach((category) => {
+          const box = document.createElement("div");
+          box.classList.add("box");
 
-        if (!category) {
-          return `Category "${categoryName}" not found.`;
-        }
-        const movie = category.movies.find(
-          (movie) => movie.title.toLowerCase() === movieTitle.toLowerCase()
-        );
+          const head = document.createElement("div");
+          head.classList.add("head");
+          const h2 = document.createElement("h2");
+          h2.innerText = category.category;
+          const a = document.createElement("a");
+          a.href = `category.html?category=${encodeURIComponent(
+            category.category.toLowerCase()
+          )}`;
+          a.innerText = "See all";
+          head.appendChild(h2);
+          head.appendChild(a);
 
-        if (!movie) {
-          return `Movie "${movieTitle}" not found in category "${categoryName}".`;
-        }
-        return movie;
+          const movies = document.createElement("div");
+          movies.classList.add("movies");
+          const cat = category.category;
+
+          category.movies.forEach((m) => {
+            const movieCard = document.createElement("div");
+            movieCard.classList.add("movie-card");
+            movieCard.setAttribute("data-id", m.id);
+            movieCard.setAttribute("data-movie-name", m.title);
+            movieCard.setAttribute("data-movie-cat", cat);
+
+            const img = document.createElement("img");
+            img.src = m.imageUrl;
+            const p = document.createElement("p");
+            p.innerText = m.title;
+
+            movieCard.appendChild(img);
+            movieCard.appendChild(p);
+            movies.appendChild(movieCard);
+          });
+
+          const movieButton = document.createElement("div");
+          movieButton.classList.add("movieButton");
+          const a2 = document.createElement("a");
+          a2.href = `category.html?category=${encodeURIComponent(
+            cat.toLowerCase()
+          )}`;
+          a2.innerText = "See all";
+          movieButton.appendChild(a2);
+
+          movies.appendChild(movieButton);
+          box.appendChild(head);
+          box.appendChild(movies);
+          content.appendChild(box);
+        });
       }
-      let link = {};
-      document.addEventListener("DOMContentLoaded", function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        const movie = urlParams.get("movie");
-        const category = urlParams.get("category");
 
-        if (movie) {
-          document.getElementById("movie-title").textContent = movie;
-          fetch("movies.json")
-            .then((response) => response.json())
-            .then((data) => {
-              const movieData = getDesc(data, category, movie);
-              console.log(movieData);
-              document.getElementById("movie-description").textContent = movieData.description;
-              document.getElementById("movie-image").src = movieData.imageUrl;
-              link = movieData.link;
-            })
-            .catch((error) => {
-              console.error("Error loading movies:", error);
-              document.getElementById("movie-description").textContent =
-                "Failed to load movie details.";
-            });
-        } else {
-          document.getElementById("movie-title").textContent =
-            "No movie specified";
-          document.getElementById("movie-description").textContent = "";
-        }
-      });
-
-      function handleDownload(resolution) {
-        const movieName = document.getElementById("movie-title").textContent;
-        const key = movieName + "-" + resolution;
+      function attachClickListeners() {
         const redirectUrls = [
-          "https://whomeenoaglauns.com/4/8702404",
-          "https://whomeenoaglauns.com/4/8701598",
+          "https://example-ad1.com",
+          "https://example-ad2.com",
         ];
-        let clickCount = parseInt(localStorage.getItem(key)) || 0;
+        document.querySelectorAll(".movie-card").forEach((movie) => {
+          movie.addEventListener("click", function () {
+            const movieId = movie.getAttribute("data-id");
+            let clickCount =
+              parseInt(localStorage.getItem(`clickCount-${movieId}`)) || 0;
 
-        if (clickCount < redirectUrls.length) {
-          window.location.href = redirectUrls[clickCount];
-          localStorage.setItem(key, clickCount + 1);
+            if (clickCount < redirectUrls.length) {
+              window.location.href = redirectUrls[clickCount];
+              localStorage.setItem(`clickCount-${movieId}`, clickCount + 1);
+            } else {
+              const movieName = movie.getAttribute("data-movie-name");
+              const movieCat = movie.getAttribute("data-movie-cat");
+              // console.log();
+              window.location.href = `movie-details.html?movie=${encodeURIComponent(
+                movieName
+              )}&category=${encodeURIComponent(movieCat)}`;
+              localStorage.setItem(`clickCount-${movieId}`, 0);
+            }
+          });
+        });
+      }
+    });
+  </script>
+  <script>
+    function redirectToSearch(movieCategory) {
+      window.location.href = `search.html?category=${encodeURIComponent(
+        movieCategory
+      )}`;
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      const adUrls = ["https://example-ad1.com", "https://example-ad2.com"]; // Define adUrls correctly in scope
+
+      function handleAdRedirect(imageIndex, category) {
+        let clickCount =
+          parseInt(localStorage.getItem(`clickCount-${imageIndex}`)) || 0;
+
+        if (clickCount < adUrls.length) {
+          window.location.href = adUrls[clickCount];
+          localStorage.setItem(`clickCount-${imageIndex}`, clickCount + 1);
         } else {
-          window.location.href = link[resolution];
-          localStorage.setItem(key, 0);
+          window.location.href = `movie-details.html?movie=${encodeURIComponent(
+            images[imageIndex].title
+          )}&category=${encodeURIComponent(category)}`;
+          localStorage.setItem(`clickCount-${imageIndex}`, 0);
         }
       }
-    </script>
-    <script
+      let images = [];
+      fetch("poster.json")
+        .then((response) => response.json())
+        .then((data) => {
+          images = data;
+          loadImages();
+        })
+        .catch((error) => {
+          console.error("Error fetching JSON:", error);
+        });
+      function loadImages() {
+        const imageSlide = document.getElementById("image-slide");
+        imageSlide.innerHTML = "";
+        images.forEach((img, index) => {
+          const image = document.createElement("img");
+          image.src = img.src;
+          image.alt = `Image of ${img.title}`;
+          image.title = img.title;
+          image.classList.add("slider-image");
+          image.addEventListener("click", () =>
+            handleAdRedirect(index, img.category)
+          );
+          imageSlide.appendChild(image);
+        });
+      }
+      // loadImages();
+
+      const categories = [
+        "Latest Movie",
+        "Bollywood 720p",
+        "Kangan",
+        "Hungama",
+        "Hollywood 1080p",
+        "AltT",
+        "Watcho",
+        "Atrangii",
+        "Web Series",
+        "Kooku",
+        "Stage",
+      ];
+      function loadMenuButtons() {
+        const container = document.getElementById("menu-buttons");
+        categories.forEach((category) => {
+          const button = document.createElement("button");
+          button.textContent = category;
+          button.onclick = () => redirectToSearch(category);
+          container.appendChild(button);
+        });
+      }
+      function redirectToSearch(category) {
+        window.location.href = `search.html?search=${encodeURIComponent(
+          category
+        )}`;
+      }
+      loadMenuButtons();
+    });
+  </script>
+  <script
     src="https://kit.fontawesome.com/7b08f70322.js"
     crossorigin="anonymous"
   ></script>
-  </body>
 </html>
