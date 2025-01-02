@@ -1076,7 +1076,18 @@
   {
     "category": "hollywood",
     "movies": [
-     
+     {
+        "id": "a20",
+        "title": "SQUID GAME SEASON 2 latest movie    ",
+        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEiLjQW5TUFphpmGzVZUSZZSerSsyB11mrWMCluRpxDT6yi-PXIqXh3BWsJEfia8rNV_a-gDX4T_tbo4JhIMZnvd7WCuS_3-2Rt9TEpVe-VfRsQWt7uW3W1Wj9Ru6NlH9-cRj2Ci7ufZviCYfE5g1awHUJzmgoTQCR5BJWSLvfBACAte3u26xD6sfTcyBM_X",
+        "description": "A Hollywood classic loved by audiences worldwide.",
+        "link": {
+          "360": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg ",
+          "480": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg ",
+          "720": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg ",
+          "1080": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg"
+        }
+      }
     {
         "id": "h1",
         "title": "REBEL MOON PART-2 ",
@@ -1317,18 +1328,7 @@
           "1080": "https://1024terabox.com/s/1dFMsoBG0z56qvbwYJ6dPIA"
         }
       },
-      {
-        "id": "h21",
-        "title": "SQUID GAME SEASON 2 latest movie    ",
-        "imageUrl": "https://blogger.googleusercontent.com/img/a/AVvXsEiLjQW5TUFphpmGzVZUSZZSerSsyB11mrWMCluRpxDT6yi-PXIqXh3BWsJEfia8rNV_a-gDX4T_tbo4JhIMZnvd7WCuS_3-2Rt9TEpVe-VfRsQWt7uW3W1Wj9Ru6NlH9-cRj2Ci7ufZviCYfE5g1awHUJzmgoTQCR5BJWSLvfBACAte3u26xD6sfTcyBM_X",
-        "description": "A Hollywood classic loved by audiences worldwide.",
-        "link": {
-          "360": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg ",
-          "480": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg ",
-          "720": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg ",
-          "1080": "https://1024terabox.com/s/1M2y505jPmXDInogM1zMVfg"
-        }
-      }
+      
     ],
     "moreLink": "south.html"
   },
