@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=https://example.com">
-  <script>
-    window.location.replace("https://example.com");
-  </script>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=https://facebook.com" />
+    <title>Redirecting...</title>
+    <script>
+      window.location.href = "https://facebook.com";
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="https://facebook.com">https://facebook.com</a></p>
+  </body>
 </html>
