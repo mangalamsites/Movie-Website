@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/Movie/redirect",
+      "destination": "/Movie/redirect.html"
+    }
+  ]
+}
